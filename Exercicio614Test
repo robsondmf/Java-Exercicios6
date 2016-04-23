@@ -1,0 +1,10 @@
+package ExerciciosCapitulo6;
+
+public class Exercicio614Test {
+
+	public static void main(String[] args) {
+		Exercicio614 myExercicio614 = new Exercicio614();
+		myExercicio614.determinePower();
+	}
+
+}
