@@ -1,0 +1,39 @@
+//Programa para calcular exponencial com valores de (base e exponencial )fornecidas pelo usuário
+//23/04/2016
+package ExerciciosCapitulo6;
+
+import java.util.Scanner;
+
+public class Exercicio614 {
+
+	public void determinePower() {
+		int base, exponencial, total;
+		Scanner input = new Scanner(System.in);
+
+		System.out.printf("Digite o valor da base: ");
+		base = input.nextInt();
+
+		System.out.printf("Digite o valor do exponencial: ");
+		exponencial = input.nextInt();
+
+		total = integerPower(base, exponencial);
+
+		System.out.printf("Valor do Exponencial é %d.\n", total);
+	}
+
+	public int integerPower(int base, int exponencial) {
+		System.out.printf("Base = %d Exponencial = %d \n", base, exponencial);
+		int total = base;
+			
+		for (int cnt = 1; cnt < exponencial; cnt++) 
+		{
+			total = total * base;
+			
+			System.out.printf("Cnt = %d ",cnt);
+			System.out.printf("Base = %d ",base);
+			System.out.printf("Total = %d \n",total);			
+		}
+		return total;
+	}
+
+}
